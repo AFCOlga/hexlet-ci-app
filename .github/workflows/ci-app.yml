@@ -18,11 +18,10 @@ jobs:
           node-version: '12.x'
       # Ставим зависимости
       - name: Install dependencies
-      - run: npm install
-      - run: npm run build --if-present
-      - run: npm test
+        run: npm install
       # Запускаем линтер
-      - run: npm run lint
+      - name: Run linter
+        run: npm run lint
       # Запускаем тесты
       # у шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
