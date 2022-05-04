@@ -3,6 +3,16 @@ name: ci-app
 # on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
+  # Snyk action
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ BIG_SECRET }}
+  
   # build – произвольно выбранное имя задания
   # их может быть больше одного
   build:
