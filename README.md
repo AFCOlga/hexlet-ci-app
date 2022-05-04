@@ -1,6 +1,9 @@
 # Example app for CI Hexlet course
 
 [![Github Actions](https://github.com/AFCOlga/hexlet-ci-app/actions/workflows/ci-app.yml/badge.svg)](https://github.com/AFCOlga/hexlet-ci-app/actions)
+[![Known Vulnerabilities](https://snyk.io/test/github/AFCOlga/hexlet-ci-app/badge.svg)](https://snyk.io/test/github/AFCOlga/hexlet-ci-app/badge.svg)
+
+(https://snyk.io/test/github/{username}/{repo})
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
